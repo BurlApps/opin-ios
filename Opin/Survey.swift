@@ -42,6 +42,8 @@ class Survey: NSObject {
         Config.sharedInstance { (config) -> Void in
             var url = "\(config.host)/surveys/\(self.id)/\(installation.id)"
             
+            println(url)
+            
             if let nsurl = NSURL(string: url) {
                 callback(url: nsurl)
             }

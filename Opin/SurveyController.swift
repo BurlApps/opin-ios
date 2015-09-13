@@ -33,8 +33,10 @@ class SurveyController: UIViewController, UIWebViewDelegate {
     func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         
         if request.URL?.scheme == "callback" {
+            var page = Global.pagesController.currentPage
+            
             self.dismissViewControllerAnimated(true, completion: { () -> Void in
-                Global.slideToController(Global.pagesController.currentPage, animated: false, direction: .Forward)
+                Global.slideToController(page, animated: false, direction: .Forward)
             })
             
             return false

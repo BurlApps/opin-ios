@@ -25,6 +25,7 @@
 		D35320D61BA54548001F2342 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35320D51BA54548001F2342 /* Global.swift */; };
 		D35320D81BA546E0001F2342 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35320D71BA546E0001F2342 /* Notifications.swift */; };
 		D35320DA1BA54788001F2342 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D35320D91BA54788001F2342 /* libc++.dylib */; };
+		D361CED71BA59E0500AFDE24 /* PlaceholderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D361CED61BA59E0500AFDE24 /* PlaceholderController.swift */; };
 		D3D5AE5A1BA52F6F00A50B8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D5AE591BA52F6F00A50B8A /* AppDelegate.swift */; };
 		D3D5AE5F1BA52F6F00A50B8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D5AE5D1BA52F6F00A50B8A /* Main.storyboard */; };
 		D3D5AE611BA52F6F00A50B8A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D5AE601BA52F6F00A50B8A /* Images.xcassets */; };
@@ -72,6 +73,7 @@
 		D35320D91BA54788001F2342 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		D35320DB1BA5479D001F2342 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		D35320DD1BA547A4001F2342 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		D361CED61BA59E0500AFDE24 /* PlaceholderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderController.swift; sourceTree = "<group>"; };
 		D3D5AE541BA52F6F00A50B8A /* Opin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Opin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D5AE581BA52F6F00A50B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3D5AE591BA52F6F00A50B8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				D3E55A421BA56626003B8351 /* SurveyController.swift */,
 				D3E55A351BA54B3C003B8351 /* PagesController.swift */,
 				D3E55A371BA54B91003B8351 /* PageController.swift */,
+				D361CED61BA59E0500AFDE24 /* PlaceholderController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				D3E55A361BA54B3C003B8351 /* PagesController.swift in Sources */,
 				D35320D41BA5451A001F2342 /* Installation.swift in Sources */,
 				D3D5AE5A1BA52F6F00A50B8A /* AppDelegate.swift in Sources */,
+				D361CED71BA59E0500AFDE24 /* PlaceholderController.swift in Sources */,
 				D3E55A321BA548EC003B8351 /* Config.swift in Sources */,
 				D3E55A381BA54B91003B8351 /* PageController.swift in Sources */,
 				D3E55A3E1BA562A3003B8351 /* TTTTimeIntervalFormatter.m in Sources */,

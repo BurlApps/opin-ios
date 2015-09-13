@@ -91,7 +91,7 @@ class PagesController: UIPageViewController, UIAlertViewDelegate, UIPageViewCont
         var controller: SurveyController = (self.storyBoard.instantiateViewControllerWithIdentifier("SurveyController") as? SurveyController)!
         
         survey.getUrl(Installation.current(), callback: { (url) -> Void in
-            controller.url = url
+            controller.url = url            
             self.presentViewController(controller, animated: true, completion: nil)
         })
     }

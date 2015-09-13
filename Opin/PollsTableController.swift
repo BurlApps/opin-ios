@@ -13,13 +13,17 @@ class PollsTableController: UITableViewController {
     private var installation = Installation.current()
     private var surveys: [Survey] = []
     private var cellIdentifier = "cell"
+    private var navBorder: UIView!
+    
+    // MARK: IBOutlets
+    @IBOutlet var placeholderView: UIView!
     
     // MARK: UIViewController Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Set Back Button Color
-        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        // Configure Placeholder
+        self.placeholderView.frame = self.view.frame
         
         // Create Text Shadow
         var shadow = NSShadow()
@@ -28,17 +32,16 @@ class PollsTableController: UITableViewController {
         
         // Add Bottom Border To Nav Bar
         if let frame = self.navigationController?.navigationBar.frame {
-            var navBorder = UIView(frame: CGRectMake(0, frame.height-1, frame.width, 1))
-            navBorder.backgroundColor = UIColor(white: 0, alpha: 0.2)
-            self.navigationController?.navigationBar.addSubview(navBorder)
+            self.navBorder = UIView(frame: CGRectMake(0, frame.height-1, frame.width, 1))
+            self.navBorder.backgroundColor = UIColor(white: 0, alpha: 0.2)
+            self.navigationController?.navigationBar.addSubview(self.navBorder)
         }
         
         // Configure Navigation Bar
-        self.navigationController?.navigationBarHidden = false
-        self.navigationController?.navigationBar.shadowImage = nil
+        self.navigationController?.navigationBar.shadowImage = UIImage.new()
         self.navigationController?.navigationBar.translucent = false
         self.navigationController?.navigationBar.barTintColor = UIColor(red:0.07, green:0.58, blue:0.96, alpha:1)
-        self.navigationController?.navigationBar.setBackgroundImage(nil, forBarMetrics: UIBarMetrics.Default)
+        self.navigationController?.navigationBar.setBackgroundImage(nil, forBarMetrics: .Default)
         
         if let font = UIFont(name: "HelveticaNeue-Bold", size: 22) {
             self.navigationController?.navigationBar.titleTextAttributes = [
@@ -61,8 +64,10 @@ class PollsTableController: UITableViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let viewController = segue.destinationViewController as! SurveyController
-        viewController.url = self.surveyUrl
+        if segue.identifier == "surveySegue" {
+            let viewController = segue.destinationViewController as! SurveyController
+            viewController.url = self.surveyUrl
+        }
     }
 
     @IBAction func addClassPressed(sender: UIBarButtonItem) {
@@ -80,15 +85,19 @@ class PollsTableController: UITableViewController {
     
     // UITableViewController Methods
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        if(self.surveys.isEmpty) {
+            self.tableView.backgroundView = self.placeholderView
+            self.tableView.separatorStyle = .None
+            return 0
+        }
+        
+        self.tableView.backgroundView = nil
+        self.tableView.separatorStyle = .SingleLine;
         return 1
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.surveys.count
-    }
-    
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 50
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -107,10 +116,6 @@ class PollsTableController: UITableViewController {
         
         if cell == nil {
             cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: self.cellIdentifier)
-            cell.textLabel?.textColor = UIColor.blackColor()
-            cell.textLabel?.font = UIFont.systemFontOfSize(18)
-            cell.detailTextLabel?.textColor = UIColor.grayColor()
-            cell.detailTextLabel?.font = UIFont.systemFontOfSize(15)
         }
         
         cell.selectionStyle = UITableViewCellSelectionStyle.Gray
