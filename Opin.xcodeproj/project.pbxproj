@@ -7,12 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D35320AC1BA5383E001F2342 /* Courgette-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D35320AB1BA5383E001F2342 /* Courgette-Regular.ttf */; };
+		D35320AE1BA54013001F2342 /* JoinClassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35320AD1BA54013001F2342 /* JoinClassController.swift */; };
+		D35320B71BA54368001F2342 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35320B31BA54360001F2342 /* Bolts.framework */; };
+		D35320B81BA54368001F2342 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35320B41BA54360001F2342 /* Parse.framework */; };
+		D35320B91BA54368001F2342 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35320B51BA54360001F2342 /* ParseCrashReporting.framework */; };
+		D35320BC1BA54379001F2342 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35320BB1BA54379001F2342 /* AudioToolbox.framework */; };
+		D35320BE1BA54383001F2342 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35320BD1BA54383001F2342 /* CFNetwork.framework */; };
+		D35320C01BA5438A001F2342 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35320BF1BA5438A001F2342 /* CoreGraphics.framework */; };
+		D35320C21BA54393001F2342 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35320C11BA54393001F2342 /* CoreLocation.framework */; };
+		D35320C41BA5439A001F2342 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35320C31BA5439A001F2342 /* QuartzCore.framework */; };
+		D35320C61BA543A0001F2342 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35320C51BA543A0001F2342 /* Security.framework */; };
+		D35320C81BA543A6001F2342 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35320C71BA543A6001F2342 /* StoreKit.framework */; };
+		D35320CA1BA543AD001F2342 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35320C91BA543AD001F2342 /* SystemConfiguration.framework */; };
+		D35320CC1BA543B6001F2342 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D35320CB1BA543B6001F2342 /* libz.dylib */; };
+		D35320CE1BA543C4001F2342 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D35320CD1BA543C4001F2342 /* libsqlite3.dylib */; };
+		D35320D41BA5451A001F2342 /* Installation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35320D31BA5451A001F2342 /* Installation.swift */; };
+		D35320D61BA54548001F2342 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35320D51BA54548001F2342 /* Global.swift */; };
+		D35320D81BA546E0001F2342 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35320D71BA546E0001F2342 /* Notifications.swift */; };
+		D35320DA1BA54788001F2342 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D35320D91BA54788001F2342 /* libc++.dylib */; };
 		D3D5AE5A1BA52F6F00A50B8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D5AE591BA52F6F00A50B8A /* AppDelegate.swift */; };
-		D3D5AE5C1BA52F6F00A50B8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D5AE5B1BA52F6F00A50B8A /* ViewController.swift */; };
 		D3D5AE5F1BA52F6F00A50B8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D5AE5D1BA52F6F00A50B8A /* Main.storyboard */; };
 		D3D5AE611BA52F6F00A50B8A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D5AE601BA52F6F00A50B8A /* Images.xcassets */; };
 		D3D5AE641BA52F6F00A50B8A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D5AE621BA52F6F00A50B8A /* LaunchScreen.xib */; };
 		D3D5AE701BA52F6F00A50B8A /* OpinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D5AE6F1BA52F6F00A50B8A /* OpinTests.swift */; };
+		D3E55A301BA54888003B8351 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E55A2F1BA54888003B8351 /* libstdc++.6.dylib */; };
+		D3E55A321BA548EC003B8351 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E55A311BA548EC003B8351 /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +46,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D35320AB1BA5383E001F2342 /* Courgette-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Courgette-Regular.ttf"; path = "Fonts/Courgette-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+		D35320AD1BA54013001F2342 /* JoinClassController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinClassController.swift; sourceTree = "<group>"; };
+		D35320B31BA54360001F2342 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		D35320B41BA54360001F2342 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		D35320B51BA54360001F2342 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		D35320BB1BA54379001F2342 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D35320BD1BA54383001F2342 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D35320BF1BA5438A001F2342 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D35320C11BA54393001F2342 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D35320C31BA5439A001F2342 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D35320C51BA543A0001F2342 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D35320C71BA543A6001F2342 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		D35320C91BA543AD001F2342 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D35320CB1BA543B6001F2342 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D35320CD1BA543C4001F2342 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		D35320CF1BA54406001F2342 /* Opin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Opin-Bridging-Header.h"; sourceTree = "<group>"; };
+		D35320D31BA5451A001F2342 /* Installation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Installation.swift; sourceTree = "<group>"; };
+		D35320D51BA54548001F2342 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		D35320D71BA546E0001F2342 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		D35320D91BA54788001F2342 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		D35320DB1BA5479D001F2342 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		D35320DD1BA547A4001F2342 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		D3D5AE541BA52F6F00A50B8A /* Opin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Opin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D5AE581BA52F6F00A50B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3D5AE591BA52F6F00A50B8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D3D5AE5B1BA52F6F00A50B8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D3D5AE5E1BA52F6F00A50B8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3D5AE601BA52F6F00A50B8A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D3D5AE631BA52F6F00A50B8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D3D5AE691BA52F6F00A50B8A /* OpinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D5AE6E1BA52F6F00A50B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3D5AE6F1BA52F6F00A50B8A /* OpinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpinTests.swift; sourceTree = "<group>"; };
+		D3E55A2F1BA54888003B8351 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		D3E55A311BA548EC003B8351 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +86,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3E55A301BA54888003B8351 /* libstdc++.6.dylib in Frameworks */,
+				D35320DA1BA54788001F2342 /* libc++.dylib in Frameworks */,
+				D35320CE1BA543C4001F2342 /* libsqlite3.dylib in Frameworks */,
+				D35320CC1BA543B6001F2342 /* libz.dylib in Frameworks */,
+				D35320CA1BA543AD001F2342 /* SystemConfiguration.framework in Frameworks */,
+				D35320C81BA543A6001F2342 /* StoreKit.framework in Frameworks */,
+				D35320C61BA543A0001F2342 /* Security.framework in Frameworks */,
+				D35320C41BA5439A001F2342 /* QuartzCore.framework in Frameworks */,
+				D35320C21BA54393001F2342 /* CoreLocation.framework in Frameworks */,
+				D35320C01BA5438A001F2342 /* CoreGraphics.framework in Frameworks */,
+				D35320BE1BA54383001F2342 /* CFNetwork.framework in Frameworks */,
+				D35320BC1BA54379001F2342 /* AudioToolbox.framework in Frameworks */,
+				D35320B71BA54368001F2342 /* Bolts.framework in Frameworks */,
+				D35320B81BA54368001F2342 /* Parse.framework in Frameworks */,
+				D35320B91BA54368001F2342 /* ParseCrashReporting.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +114,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D35320AF1BA54019001F2342 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D3D5AE591BA52F6F00A50B8A /* AppDelegate.swift */,
+				D3D5AE5D1BA52F6F00A50B8A /* Main.storyboard */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		D35320B01BA54024001F2342 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D35320AD1BA54013001F2342 /* JoinClassController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D35320B11BA54191001F2342 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D3E55A311BA548EC003B8351 /* Config.swift */,
+				D35320D51BA54548001F2342 /* Global.swift */,
+				D35320D31BA5451A001F2342 /* Installation.swift */,
+				D35320D71BA546E0001F2342 /* Notifications.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D35320B21BA54360001F2342 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3E55A2F1BA54888003B8351 /* libstdc++.6.dylib */,
+				D35320DD1BA547A4001F2342 /* Social.framework */,
+				D35320DB1BA5479D001F2342 /* Accounts.framework */,
+				D35320D91BA54788001F2342 /* libc++.dylib */,
+				D35320CD1BA543C4001F2342 /* libsqlite3.dylib */,
+				D35320CB1BA543B6001F2342 /* libz.dylib */,
+				D35320C91BA543AD001F2342 /* SystemConfiguration.framework */,
+				D35320C71BA543A6001F2342 /* StoreKit.framework */,
+				D35320C51BA543A0001F2342 /* Security.framework */,
+				D35320C31BA5439A001F2342 /* QuartzCore.framework */,
+				D35320C11BA54393001F2342 /* CoreLocation.framework */,
+				D35320BF1BA5438A001F2342 /* CoreGraphics.framework */,
+				D35320BD1BA54383001F2342 /* CFNetwork.framework */,
+				D35320BB1BA54379001F2342 /* AudioToolbox.framework */,
+				D35320B31BA54360001F2342 /* Bolts.framework */,
+				D35320B41BA54360001F2342 /* Parse.framework */,
+				D35320B51BA54360001F2342 /* ParseCrashReporting.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		D3D5AE4B1BA52F6F00A50B8A = {
 			isa = PBXGroup;
 			children = (
 				D3D5AE561BA52F6F00A50B8A /* Opin */,
 				D3D5AE6C1BA52F6F00A50B8A /* OpinTests */,
 				D3D5AE551BA52F6F00A50B8A /* Products */,
+				D35320B21BA54360001F2342 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,11 +188,9 @@
 		D3D5AE561BA52F6F00A50B8A /* Opin */ = {
 			isa = PBXGroup;
 			children = (
-				D3D5AE591BA52F6F00A50B8A /* AppDelegate.swift */,
-				D3D5AE5B1BA52F6F00A50B8A /* ViewController.swift */,
-				D3D5AE5D1BA52F6F00A50B8A /* Main.storyboard */,
-				D3D5AE601BA52F6F00A50B8A /* Images.xcassets */,
-				D3D5AE621BA52F6F00A50B8A /* LaunchScreen.xib */,
+				D35320AF1BA54019001F2342 /* Core */,
+				D35320B11BA54191001F2342 /* Models */,
+				D35320B01BA54024001F2342 /* Controllers */,
 				D3D5AE571BA52F6F00A50B8A /* Supporting Files */,
 			);
 			path = Opin;
@@ -90,7 +199,11 @@
 		D3D5AE571BA52F6F00A50B8A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D3D5AE621BA52F6F00A50B8A /* LaunchScreen.xib */,
+				D3D5AE601BA52F6F00A50B8A /* Images.xcassets */,
+				D35320AB1BA5383E001F2342 /* Courgette-Regular.ttf */,
 				D3D5AE581BA52F6F00A50B8A /* Info.plist */,
+				D35320CF1BA54406001F2342 /* Opin-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -122,6 +235,7 @@
 				D3D5AE501BA52F6F00A50B8A /* Sources */,
 				D3D5AE511BA52F6F00A50B8A /* Frameworks */,
 				D3D5AE521BA52F6F00A50B8A /* Resources */,
+				D35320DF1BA54818001F2342 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -194,6 +308,7 @@
 			files = (
 				D3D5AE5F1BA52F6F00A50B8A /* Main.storyboard in Resources */,
 				D3D5AE641BA52F6F00A50B8A /* LaunchScreen.xib in Resources */,
+				D35320AC1BA5383E001F2342 /* Courgette-Regular.ttf in Resources */,
 				D3D5AE611BA52F6F00A50B8A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,13 +322,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D35320DF1BA54818001F2342 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=/usr/local/bin:$PATH\ncd ../server\n\nparse symbols release --path=\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D3D5AE501BA52F6F00A50B8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3D5AE5C1BA52F6F00A50B8A /* ViewController.swift in Sources */,
+				D35320D81BA546E0001F2342 /* Notifications.swift in Sources */,
+				D35320D61BA54548001F2342 /* Global.swift in Sources */,
+				D35320AE1BA54013001F2342 /* JoinClassController.swift in Sources */,
+				D35320D41BA5451A001F2342 /* Installation.swift in Sources */,
 				D3D5AE5A1BA52F6F00A50B8A /* AppDelegate.swift in Sources */,
+				D3E55A321BA548EC003B8351 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,9 +477,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = Opin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Opin/Opin-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -352,9 +494,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = Opin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Opin/Opin-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -411,6 +559,7 @@
 				D3D5AE751BA52F6F00A50B8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3D5AE761BA52F6F00A50B8A /* Build configuration list for PBXNativeTarget "OpinTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +568,7 @@
 				D3D5AE781BA52F6F00A50B8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

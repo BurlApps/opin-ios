@@ -15,8 +15,73 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        let infoDictionary = NSBundle.mainBundle().infoDictionary!
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        
+        //Initialize Parse
+        ParseCrashReporting.enable()
+        Parse.setApplicationId("kZkm35gPYdZKT7dAAie6MYUhSQGiJLrzvdjuHjCi", clientKey: "C8BrrahLYrYx4j4ijlk27PpjmPx1xDda1cPA4xHf")
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
+        // Track an app open here if we launch with a push, unless
+        // "content_available" was used to trigger a background push (introduced
+        // in iOS 7). In that case, we skip tracking here to avoid double
+        // counting the app-open.
+        if application.applicationState != UIApplicationState.Background {
+            let preBackgroundPush = !application.respondsToSelector(Selector("backgroundRefreshStatus"))
+            let oldPushHandlerOnly = !self.respondsToSelector(Selector("application:didReceiveRemoteNotification:fetchCompletionHandler:"))
+            let noPushPayload = (launchOptions?[UIApplicationLaunchOptionsRemoteNotificationKey] == nil)
+            
+            if preBackgroundPush || oldPushHandlerOnly || noPushPayload {
+                PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: nil)
+            }
+        }
+        
+        // Update Config
+        Config.update(nil)
+        
+        // Configure Settings Panel
+        var versionBuild = Global.appBuildVersion()        
+        userDefaults.setValue(versionBuild, forKey: "VersionNumber")
+        userDefaults.synchronize()
+        
         return true
+    }
+    
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        Installation.current().setDeviceToken(deviceToken)
+    }
+    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject], fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
+        var wasActive = true
+        var actions: [String]!
+        
+        if application.applicationState == UIApplicationState.Inactive {
+            PFAnalytics.trackAppOpenedWithRemoteNotificationPayloadInBackground(userInfo, block: nil)
+            wasActive = false
+        }
+        
+        if let tempActions = userInfo["actions"] as? String {
+            actions = tempActions.componentsSeparatedByString(",")
+        } else if let tempAction = userInfo["action"] as? String {
+            actions = [tempAction]
+        }
+        
+        if actions != nil && !actions.isEmpty {
+            for (var action) in actions {
+                var title = userInfo["title"] as? String
+                var message = userInfo["message"] as? String
+                
+                action = action.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+                
+                switch(action) {
+                default: println(action)
+                }
+            }
+        }
+        
+        Installation.current().clearBadge()
+        completionHandler(UIBackgroundFetchResult.NewData)
     }
 
     func applicationWillResignActive(application: UIApplication) {
