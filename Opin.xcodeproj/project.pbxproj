@@ -18,7 +18,6 @@
 		D35320C21BA54393001F2342 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35320C11BA54393001F2342 /* CoreLocation.framework */; };
 		D35320C41BA5439A001F2342 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35320C31BA5439A001F2342 /* QuartzCore.framework */; };
 		D35320C61BA543A0001F2342 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35320C51BA543A0001F2342 /* Security.framework */; };
-		D35320C81BA543A6001F2342 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35320C71BA543A6001F2342 /* StoreKit.framework */; };
 		D35320CA1BA543AD001F2342 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35320C91BA543AD001F2342 /* SystemConfiguration.framework */; };
 		D35320CC1BA543B6001F2342 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D35320CB1BA543B6001F2342 /* libz.dylib */; };
 		D35320CE1BA543C4001F2342 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D35320CD1BA543C4001F2342 /* libsqlite3.dylib */; };
@@ -33,6 +32,12 @@
 		D3D5AE701BA52F6F00A50B8A /* OpinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D5AE6F1BA52F6F00A50B8A /* OpinTests.swift */; };
 		D3E55A301BA54888003B8351 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E55A2F1BA54888003B8351 /* libstdc++.6.dylib */; };
 		D3E55A321BA548EC003B8351 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E55A311BA548EC003B8351 /* Config.swift */; };
+		D3E55A341BA54AB3003B8351 /* PollsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E55A331BA54AB3003B8351 /* PollsTableController.swift */; };
+		D3E55A361BA54B3C003B8351 /* PagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E55A351BA54B3C003B8351 /* PagesController.swift */; };
+		D3E55A381BA54B91003B8351 /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E55A371BA54B91003B8351 /* PageController.swift */; };
+		D3E55A3A1BA552FB003B8351 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E55A391BA552FB003B8351 /* Survey.swift */; };
+		D3E55A3E1BA562A3003B8351 /* TTTTimeIntervalFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E55A3D1BA562A3003B8351 /* TTTTimeIntervalFormatter.m */; };
+		D3E55A431BA56626003B8351 /* SurveyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E55A421BA56626003B8351 /* SurveyController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +62,6 @@
 		D35320C11BA54393001F2342 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D35320C31BA5439A001F2342 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D35320C51BA543A0001F2342 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		D35320C71BA543A6001F2342 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D35320C91BA543AD001F2342 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D35320CB1BA543B6001F2342 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		D35320CD1BA543C4001F2342 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -79,6 +83,13 @@
 		D3D5AE6F1BA52F6F00A50B8A /* OpinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpinTests.swift; sourceTree = "<group>"; };
 		D3E55A2F1BA54888003B8351 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
 		D3E55A311BA548EC003B8351 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		D3E55A331BA54AB3003B8351 /* PollsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollsTableController.swift; sourceTree = "<group>"; };
+		D3E55A351BA54B3C003B8351 /* PagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagesController.swift; sourceTree = "<group>"; };
+		D3E55A371BA54B91003B8351 /* PageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
+		D3E55A391BA552FB003B8351 /* Survey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
+		D3E55A3C1BA562A3003B8351 /* TTTTimeIntervalFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTTimeIntervalFormatter.h; sourceTree = "<group>"; };
+		D3E55A3D1BA562A3003B8351 /* TTTTimeIntervalFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTTimeIntervalFormatter.m; sourceTree = "<group>"; };
+		D3E55A421BA56626003B8351 /* SurveyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +102,6 @@
 				D35320CE1BA543C4001F2342 /* libsqlite3.dylib in Frameworks */,
 				D35320CC1BA543B6001F2342 /* libz.dylib in Frameworks */,
 				D35320CA1BA543AD001F2342 /* SystemConfiguration.framework in Frameworks */,
-				D35320C81BA543A6001F2342 /* StoreKit.framework in Frameworks */,
 				D35320C61BA543A0001F2342 /* Security.framework in Frameworks */,
 				D35320C41BA5439A001F2342 /* QuartzCore.framework in Frameworks */,
 				D35320C21BA54393001F2342 /* CoreLocation.framework in Frameworks */,
@@ -127,6 +137,10 @@
 			isa = PBXGroup;
 			children = (
 				D35320AD1BA54013001F2342 /* JoinClassController.swift */,
+				D3E55A331BA54AB3003B8351 /* PollsTableController.swift */,
+				D3E55A421BA56626003B8351 /* SurveyController.swift */,
+				D3E55A351BA54B3C003B8351 /* PagesController.swift */,
+				D3E55A371BA54B91003B8351 /* PageController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -138,6 +152,7 @@
 				D35320D51BA54548001F2342 /* Global.swift */,
 				D35320D31BA5451A001F2342 /* Installation.swift */,
 				D35320D71BA546E0001F2342 /* Notifications.swift */,
+				D3E55A391BA552FB003B8351 /* Survey.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -152,7 +167,6 @@
 				D35320CD1BA543C4001F2342 /* libsqlite3.dylib */,
 				D35320CB1BA543B6001F2342 /* libz.dylib */,
 				D35320C91BA543AD001F2342 /* SystemConfiguration.framework */,
-				D35320C71BA543A6001F2342 /* StoreKit.framework */,
 				D35320C51BA543A0001F2342 /* Security.framework */,
 				D35320C31BA5439A001F2342 /* QuartzCore.framework */,
 				D35320C11BA54393001F2342 /* CoreLocation.framework */,
@@ -188,6 +202,7 @@
 		D3D5AE561BA52F6F00A50B8A /* Opin */ = {
 			isa = PBXGroup;
 			children = (
+				D3E55A3B1BA5628F003B8351 /* 3rdParty */,
 				D35320AF1BA54019001F2342 /* Core */,
 				D35320B11BA54191001F2342 /* Models */,
 				D35320B01BA54024001F2342 /* Controllers */,
@@ -223,6 +238,15 @@
 				D3D5AE6E1BA52F6F00A50B8A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3E55A3B1BA5628F003B8351 /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+				D3E55A3C1BA562A3003B8351 /* TTTTimeIntervalFormatter.h */,
+				D3E55A3D1BA562A3003B8351 /* TTTTimeIntervalFormatter.m */,
+			);
+			name = 3rdParty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,11 +294,21 @@
 		D3D5AE4C1BA52F6F00A50B8A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Brian Vallelunga";
 				TargetAttributes = {
 					D3D5AE531BA52F6F00A50B8A = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = R5K2X99B7E;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					D3D5AE681BA52F6F00A50B8A = {
 						CreatedOnToolsVersion = 6.4;
@@ -334,7 +368,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export PATH=/usr/local/bin:$PATH\ncd ../server\n\nparse symbols release --path=\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}\"";
+			shellScript = "Type a script or drag a script file from your workspace to insert its path";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -343,12 +377,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3E55A3A1BA552FB003B8351 /* Survey.swift in Sources */,
 				D35320D81BA546E0001F2342 /* Notifications.swift in Sources */,
 				D35320D61BA54548001F2342 /* Global.swift in Sources */,
+				D3E55A431BA56626003B8351 /* SurveyController.swift in Sources */,
 				D35320AE1BA54013001F2342 /* JoinClassController.swift in Sources */,
+				D3E55A341BA54AB3003B8351 /* PollsTableController.swift in Sources */,
+				D3E55A361BA54B3C003B8351 /* PagesController.swift in Sources */,
 				D35320D41BA5451A001F2342 /* Installation.swift in Sources */,
 				D3D5AE5A1BA52F6F00A50B8A /* AppDelegate.swift in Sources */,
 				D3E55A321BA548EC003B8351 /* Config.swift in Sources */,
+				D3E55A381BA54B91003B8351 /* PageController.swift in Sources */,
+				D3E55A3E1BA562A3003B8351 /* TTTTimeIntervalFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +518,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -495,6 +536,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",

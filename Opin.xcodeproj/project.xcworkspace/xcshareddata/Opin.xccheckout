@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>6084B290-F4F1-4993-825C-8D9AB7F9ABA4</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Opin</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>E2E3A9108CABFA65D9A27ABD75A182F0984EC68F</key>
 		<string>github.com:BurlApps/diffy-ios.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Opin.xcodeproj/project.xcworkspace</string>
+	<string>Opin.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>E2E3A9108CABFA65D9A27ABD75A182F0984EC68F</key>

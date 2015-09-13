@@ -5,3 +5,5 @@
 
 #import <Parse/Parse.h>
 #import <ParseCrashReporting/ParseCrashReporting.h>
+
+#import "TTTTimeIntervalFormatter.h"

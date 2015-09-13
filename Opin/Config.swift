@@ -18,7 +18,7 @@ class Config: NSObject {
     convenience init(_ object: PFConfig) {
         self.init()
 
-        self.host = object["host"] as? String
+        self.host = object.objectForKey("host") as? String
         self.parse = object
     }
     
@@ -26,7 +26,7 @@ class Config: NSObject {
     class func sharedInstance(callback: ((config: Config) -> Void)!) {
         let config = PFConfig.currentConfig()
         
-        if !updating && config["host"] != nil {
+        if !updating && config.objectForKey("host") != nil {
             callback?(config: Config(config))
         } else {
             Config.update(callback)

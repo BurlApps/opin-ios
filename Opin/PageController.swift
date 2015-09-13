@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Brian Vallelunga. All rights reserved.
 //
 
-import Cocoa
-
-class HomePageController: UIPageViewController {
-
+class PageController: UINavigationController {
+    
+    // MARK: Instance Variables
+    var pageIndex: Int!
 }

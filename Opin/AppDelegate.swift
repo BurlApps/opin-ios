@@ -40,6 +40,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Update Config
         Config.update(nil)
         
+        // Create Installation
+        Installation.startup()
+        
         // Configure Settings Panel
         var versionBuild = Global.appBuildVersion()        
         userDefaults.setValue(versionBuild, forKey: "VersionNumber")
@@ -75,7 +78,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 action = action.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
                 
                 switch(action) {
-                default: println(action)
+                    case "survey.new":
+                        if let survey = userInfo["survey"] as? String {
+                            Global.showSurvey(survey)
+                        }
+                    
+                    default: println(action)
                 }
             }
         }
