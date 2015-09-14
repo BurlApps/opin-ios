@@ -25,6 +25,18 @@ class SurveyController: UIViewController, UIWebViewDelegate {
         self.webview.loadRequest(NSURLRequest(URL: url))
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        UIApplication.sharedApplication().statusBarHidden = true
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        UIApplication.sharedApplication().statusBarHidden = false
+    }
+    
     // MARK: UIWebViewDelegate Methods
     func webViewDidFinishLoad(webView: UIWebView) {
         self.loadingLabel.hidden = true
