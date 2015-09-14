@@ -77,6 +77,7 @@ class PollsTableController: UITableViewController {
     func reloadSurveys() {
         self.installation.getSurveys { (surveys) -> Void in
             self.surveys = surveys
+            self.installation.setBadge(surveys.count)
             self.refreshControl?.endRefreshing()
             self.tableView.reloadData()
         }

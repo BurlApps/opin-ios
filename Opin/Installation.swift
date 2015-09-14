@@ -39,6 +39,11 @@ class Installation: NSObject {
         self.parse.saveInBackground()
     }
     
+    func setBadge(badge: Int) {
+        self.parse.badge = badge
+        self.parse.saveInBackground()
+    }
+    
     func clearBadge() {
         if self.parse.badge != 0 {
             self.parse.badge = 0

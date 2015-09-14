@@ -88,7 +88,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         
-        Installation.current().clearBadge()
         completionHandler(UIBackgroundFetchResult.NewData)
     }
 
