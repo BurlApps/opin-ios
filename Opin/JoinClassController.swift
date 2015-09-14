@@ -13,15 +13,28 @@ class JoinClassController: UIViewController, UIAlertViewDelegate {
     // Instance Variables
     private var installation = Installation.current()
     private var notifications = Notifications()
+    private var heroBorder: UIView!
     
     // MARK: IBOutlets
     @IBOutlet weak var codeInput: UITextField!
+    @IBOutlet weak var heroView: UIView!
     
     // MARK: UIViewController Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationController?.navigationBarHidden = true
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // Add Bottom Border To Nav Bar
+        if self.heroBorder == nil {
+            self.heroBorder = UIView(frame: CGRectMake(0, heroView.frame.height-1, heroView.frame.width, 1))
+            heroBorder.backgroundColor = UIColor(white: 0, alpha: 0.4)
+            self.heroView.addSubview(heroBorder)
+        }
     }
     
     @IBAction func buttonPressed(sender: UIButton) {

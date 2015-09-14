@@ -13,7 +13,6 @@ class PollsTableController: UITableViewController {
     private var installation = Installation.current()
     private var surveys: [Survey] = []
     private var cellIdentifier = "cell"
-    private var navBorder: UIView!
     
     // MARK: IBOutlets
     @IBOutlet var placeholderView: UIView!
@@ -32,9 +31,9 @@ class PollsTableController: UITableViewController {
         
         // Add Bottom Border To Nav Bar
         if let frame = self.navigationController?.navigationBar.frame {
-            self.navBorder = UIView(frame: CGRectMake(0, frame.height-1, frame.width, 1))
-            self.navBorder.backgroundColor = UIColor(white: 0, alpha: 0.2)
-            self.navigationController?.navigationBar.addSubview(self.navBorder)
+            var navBorder = UIView(frame: CGRectMake(0, frame.height-1, frame.width, 1))
+            navBorder.backgroundColor = UIColor(white: 0, alpha: 0.2)
+            self.navigationController?.navigationBar.addSubview(navBorder)
         }
         
         // Configure Navigation Bar
