@@ -21,6 +21,12 @@ class SurveyController: UIViewController, UIWebViewDelegate {
         
         self.navigationController?.navigationBarHidden = true
         
+        Config.sharedInstance { (config) -> Void in
+            self.view.backgroundColor = config.loaderBackground
+            self.webview.backgroundColor = config.loaderBackground
+            self.loadingLabel.textColor = config.loaderPrimary
+        }
+        
         self.webview.delegate = self
         self.webview.loadRequest(NSURLRequest(URL: url))
     }
