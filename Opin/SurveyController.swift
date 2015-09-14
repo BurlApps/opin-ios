@@ -25,6 +25,7 @@ class SurveyController: UIViewController, UIWebViewDelegate {
             self.view.backgroundColor = config.loaderBackground
             self.webview.backgroundColor = config.loaderBackground
             self.loadingLabel.textColor = config.loaderPrimary
+            self.loadingLabel.backgroundColor = config.loaderBackground
         }
         
         self.webview.delegate = self

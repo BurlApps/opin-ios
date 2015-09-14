@@ -23,7 +23,10 @@ class JoinClassController: UIViewController, UIAlertViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationController?.navigationBarHidden = true
+        self.navigationController?.navigationBar.translucent = true
+        self.navigationController?.navigationBar.backgroundColor = UIColor.clearColor()
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -35,6 +38,10 @@ class JoinClassController: UIViewController, UIAlertViewDelegate {
             heroBorder.backgroundColor = UIColor(white: 0, alpha: 0.4)
             self.heroView.addSubview(heroBorder)
         }
+    }
+    
+    @IBAction func arrowPressed(sender: UIBarButtonItem) {
+        Global.slideToController(1, animated: true, direction: .Forward)
     }
     
     @IBAction func buttonPressed(sender: UIButton) {
@@ -64,7 +71,7 @@ class JoinClassController: UIViewController, UIAlertViewDelegate {
     
     // MARK: Instance Methods
     func alertView(alertView: UIAlertView, didDismissWithButtonIndex buttonIndex: Int) {
-        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(0.5 * Double(NSEC_PER_SEC)))
+        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(0.25 * Double(NSEC_PER_SEC)))
         
         dispatch_after(delayTime, dispatch_get_main_queue()) {
             Global.slideToController(1, animated: true, direction: .Forward)

@@ -49,4 +49,14 @@ class Global {
             Survey.fetch(surveyID, callback: self.pagesController.showSurvey)
         }
     }
+    
+    class func reloadSurveys() {
+        if self.pagesController != nil {
+            for (index, parent) in self.pagesController.controllers {
+                if let controller = parent.topViewController as? PollsTableController {
+                    controller.reloadSurveys()
+                }
+            }
+        }
+    }
 }
