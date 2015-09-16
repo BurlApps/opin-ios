@@ -15,7 +15,6 @@ class PlaceholderController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor(red:0.98, green:1, blue:1, alpha:1)
         self.thumbImage.tintColor = UIColor(red:0.18, green:0.34, blue:0.45, alpha:0.5)
     }
 }
